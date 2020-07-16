@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3116C8F3158FDDA3AF93784B /* Pods_book_finder_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42CC50FB1439272052E1589 /* Pods_book_finder_ios.framework */; };
 		4C986D0F24C0D54E0015BA3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C986D0E24C0D54E0015BA3E /* AppDelegate.swift */; };
 		4C986D1124C0D54E0015BA3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C986D1024C0D54E0015BA3E /* SceneDelegate.swift */; };
 		4C986D1324C0D54E0015BA3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C986D1224C0D54E0015BA3E /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43E101F880A2C26DE5AF3E5F /* Pods-book-finder-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-book-finder-ios.debug.xcconfig"; path = "Target Support Files/Pods-book-finder-ios/Pods-book-finder-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		4C986D0B24C0D54E0015BA3E /* book-finder-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "book-finder-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C986D0E24C0D54E0015BA3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C986D1024C0D54E0015BA3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4C986D1724C0D5500015BA3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C986D1A24C0D5500015BA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C986D1C24C0D5500015BA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9929F5D0C037E96184F2FF68 /* Pods-book-finder-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-book-finder-ios.release.xcconfig"; path = "Target Support Files/Pods-book-finder-ios/Pods-book-finder-ios.release.xcconfig"; sourceTree = "<group>"; };
+		E42CC50FB1439272052E1589 /* Pods_book_finder_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_book_finder_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3116C8F3158FDDA3AF93784B /* Pods_book_finder_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2AD40103A668FB0B9E82CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43E101F880A2C26DE5AF3E5F /* Pods-book-finder-ios.debug.xcconfig */,
+				9929F5D0C037E96184F2FF68 /* Pods-book-finder-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43528660480C4A1464BC03FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E42CC50FB1439272052E1589 /* Pods_book_finder_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C986D0224C0D54E0015BA3E = {
 			isa = PBXGroup;
 			children = (
 				4C986D0D24C0D54E0015BA3E /* book-finder-ios */,
 				4C986D0C24C0D54E0015BA3E /* Products */,
+				0D2AD40103A668FB0B9E82CA /* Pods */,
+				43528660480C4A1464BC03FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C986D1F24C0D5500015BA3E /* Build configuration list for PBXNativeTarget "book-finder-ios" */;
 			buildPhases = (
+				A9E9350A7AE6F39923084C0C /* [CP] Check Pods Manifest.lock */,
 				4C986D0724C0D54E0015BA3E /* Sources */,
 				4C986D0824C0D54E0015BA3E /* Frameworks */,
 				4C986D0924C0D54E0015BA3E /* Resources */,
+				FA2351ECC90300D9EC633F04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9E9350A7AE6F39923084C0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-book-finder-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2351ECC90300D9EC633F04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-book-finder-ios/Pods-book-finder-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-book-finder-ios/Pods-book-finder-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-book-finder-ios/Pods-book-finder-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C986D0724C0D54E0015BA3E /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		4C986D2024C0D5500015BA3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E101F880A2C26DE5AF3E5F /* Pods-book-finder-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		4C986D2124C0D5500015BA3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9929F5D0C037E96184F2FF68 /* Pods-book-finder-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
