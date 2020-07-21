@@ -1,6 +1,0 @@
-framework module Pods_book_finder_ios {
-  umbrella header "Pods-book-finder-ios-umbrella.h"
-
-  export *
-  module * { export * }
-}
